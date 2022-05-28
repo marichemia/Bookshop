@@ -1,1 +1,1 @@
-https://marichemia.github.io/Bookshop/Pages/index.html link yo bookshop page
+https://marichemia.github.io/Bookshop/Pages/index.html link to bookshop page
