@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Bree+Serif&family=Merriweather:ital,wght@1,300&family=Playfair+Display:ital@1&family=Source+Code+Pro:wght@900&family=Special+Elite&display=swap');
+
+:root {
+    --brown: #e5b9a8;
+    --background-brown: #ead6cd;
+    --blue: #4A5FC1;
+    --cyan: #9CF6FB;
+    --light-cyan: #E1FCFD;
+    --dark-blue: #394f8A;
+}
+
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: var(--background-brown);
+    overflow-x:hidden;
+    height: 1800px;
+}
+
+
+#wrapper{
+    
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 1230px;
+    height: 1750px;
+    flex-direction: column;
+    background-color:var(--background-brown);
+    margin-left: 280px;
+    margin-right: 280px;
+    
+    
+    
+}
+
+#header{
+    
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1230px;
+    height: 200px;
+    margin-top: -1500px;
+    background-color: var(--dark-blue);
+}
+
+#logo {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 100px;
+    margin-left: 100px;
+}
+
+#logoText {
+    font-family:Special Elite;
+    font-size: 100px;
+    color:rgb(223, 211, 56);
+}
+
+#headerImg{
+    display: flex;
+    position: relative;
+    margin-left: 600px;
+    margin-top: 10px;
+    width: 200px;
+}
+
+#firstRow{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    width: 1150px;
+    height: 350px;
+    
+    margin-top: -750px;
+}
+
+
+.book{
+    margin-right: 35px;
+  
+}
+
+#firstRowInfo{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    width: 1230px;
+    height: 200px;
+    
+    margin-top:-70px;
+    margin-left: 80px;
+}
+
+.infoCard{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-right: 35px;
+    height: 200px;
+    width: 200px;
+    font-family: Arvo;
+    
+}
+
+.title{
+    font-family: Bree Serif;
+    margin-top: -5px;
+    display: flex;
+    height: 63px;
+
+}
+
+.price{
+    font-family: Merriweather;
+}
+
+.button-div{
+    
+    display: flex;
+    flex-direction: row;
+
+}
+
+.learn-more-button{
+    line-height: 2;
+    text-align: center;
+    background-color: rgb(210, 223, 31);
+    border: 1px solid rgb(216, 27, 153);
+    border-radius: 5px;
+    
+    
+}
+
+.learn-more-button:hover{
+    background-color: rgb(216, 27, 153);
+    
+}
+
+.add-to-bag-button{
+    display: flex;
+    margin-left: 15px;
+    margin-top: 5px;
+    color: var(--blue);
+}
+
+a{
+    text-decoration: none;
+}
+
+.add-to-bag-button:hover{
+    color: rgb(216, 27, 153);
+    font-style: italic;
+
+}
+
+::selection{
+    background-color: var(--dark-blue);
+    color: rgb(210, 223, 31);
+}
+
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid rgb(216, 27, 153);
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+}
+
+.modal.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(216, 27, 153);
+    padding-top: 50px;
+}
+
+.modal-header .title{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal-header .close-button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal-body{
+    padding: 10px 15px;
+}
+
+#second-row{
+    display: flex;
+    position: relative;
+    width: 1230px;
+    height: 200px;
+    margin-bottom: -200px;
+    margin-left: 80px;
+}
+
+#secondRowInfo{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    width: 1230px;
+    height: 200px;
+    margin-bottom: -200px;
+    bottom: -280px;
+    left: 40px;
+}
+
+#shopping-cart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    width: 310px;
+    height: 350px;
+    background-color: var(--dark-blue);
+    top: 63%;
+    left: 0.5%;
+    border-radius: 7%;
+}
+
+#cartHeader{
+    display: flex;
+    position: relative;
+    width: 300px;
+    height: auto;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-family: Special Elite;
+    font-weight: 1000;
+    color: rgb(210, 223, 31);
+}
+
+#cartBody{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    margin-top: 20px;
+    background-color: #f1f5f5;
+    width: 300px;
+    height: 280px;
+    border-radius: 2%;
+    overflow-y: visible;
+}
+
+#order-button{
+    margin-top: -5px;
+    margin-left: 110px;
+    line-height: 1.8;
+    width: 80px;
+    text-align: center;
+    background-color: rgb(210, 223, 31);
+    border: 1px solid rgb(216, 27, 153);
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+#order-button:hover{
+    background-color: rgb(216, 27, 153);
+}
+
+#inside-cart-body-title{
+    display: flex;
+    height: 280px;
+    width: 200px;
+    margin-right: 5px;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-family: Arvo;
+    font-weight: 700;
+    white-space: pre;
+    background-color: #23379162;
+}
+
+#totalPrice{
+    display: flex;
+    height: 250px;
+    width: 95px;
+    margin-top: 30px;
+    font-family: Arvo;
+    font-size: larger;
+}
+
+form input{
+  width: 100%;
+  padding: 10px 5px;
+  margin: 5px 0;
+  border: 0;
+  border-bottom: 1px solid rgb(216, 27, 153);
+  outline: none;
+  background: transparent;
+}
+
+#radio{
+    display: flex;
+    flex-direction: row;
+    width: 80px;
+    margin-left: -8px;
+    margin-top: -15px;
+}
+
+#choose-gifts{
+    display: flex;
+    flex-direction: row;
+    margin-top: -15px;
+}
+
+.checkbox{
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    height: 100px;
+}
+
+#checkboxtxt{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 100px;
+    margin-top: -15px;
+}
+
+.checkbox-texts{
+    display: flex;
+    margin-bottom: -10px;
+}
+
+#complete-button{
+    margin-left: 180px;
+    border: 1px solid rgb(216, 27, 153);
+    line-height: 1.8;
+    width: 120px;
+    text-align: center;
+    background-color: rgb(210, 223, 31);
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+#complete-button:hover{
+    background-color: rgb(216, 27, 153);
+}
+
+
+
