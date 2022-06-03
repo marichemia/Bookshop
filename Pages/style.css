@@ -12,12 +12,11 @@
 html{
     box-sizing: border-box;
     scroll-behavior: smooth;
-    overflow-x: hidden;
+   
 }
 
 body{
     background-color: var(--background-brown);
-    overflow-x:hidden;
     height: 1800px;
 }
 
